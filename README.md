@@ -1,8 +1,8 @@
 # Vr-club
 
-Ссылка: <a href='https://vr-club-ten.vercel.app/'>Vr-club</a>
+Live demo: <a href='https://vr-club-ten.vercel.app/'>Vr-club</a>
 
-<h3>Использованные технологии:</h3>
+<h3>Technologies used:</h3>
 
-» Sass / Scss <br>
-» JS
+» JS <br>
+» Sass / Scss
