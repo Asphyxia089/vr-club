@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>VrClub</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230328211632">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header-auth">
+			<a href="index.html" class="header-auth__title">Vr club</a>
+		</header>
+		<main class="page page_white">
+			<section class="page__auth auth">
+				<div class="auth__container">
+					<div class="auth__body">
+						<header class="auth__header">
+							<h2 class="auth__title">Вход</h2>
+						</header>
+						<form method="POST" class="auth__form" action="#">
+							<div class="auth__item">
+								<label class="auth__label" for="name">Имя пользователя</label>
+								<input class="auth__input" type="text" id="name" name="name" required>
+							</div>
+							<div class="auth__item">
+								<label class="auth__label" for="password">Пароль</label>
+								<input class="auth__input" type="password" id="password" name="password" required>
+								<button id="show-password-btn" type="button" class="auth__viewpass"><img src="img/eye.svg" alt="view password"></button>
+							</div>
+							<!-- <a class="auth__fp" href="#">Forgot Password?</a> -->
+							<button class="auth__btn" type="submit">Войти</button>
+							<p class="auth__signup">У вас нет аккаунта?</p>
+							<a class="auth__signup" href="signup.html"><span class="cr-orange">Зарегистрироваться</span></a>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><img class="popup__cross" src="img/cross.svg" alt="close"></button>
+				<h1 class="popup__title">Забронировать место</h1>
+				<form method="POST" class="popup__form" action="#">
+					<div class="popup__item">
+						<label class="popup__label" for="time">Устройство</label>
+						<select name="devices" id="devices">
+							<option value="oculus" selected>Oculus VR</option>
+							<option value="ps5">Ps 5</option>
+							<option value="xbox">Xbox</option>
+						</select>
+					</div>
+					<div class="popup__item">
+						<label class="popup__label" for="time">Время</label>
+						<input class="popup__input" type="time" id="time" name="time" min="11:00" max="22:00" required>
+					</div>
+					<div class="popup__item">
+						<label class="popup__label" for="datePopup">Дата</label>
+						<input class="popup__input" type="date" id="datePopup" min="" max="" name="date" required>
+					</div>
+					<div class="popup__item">
+						<label class="popup__label" for="guests">Количество людей</label>
+						<input class="popup__input" type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+					</div>
+
+					<!-- <div class="popup__item">
+					<label class="popup__label" for="question">Ваш вопрос</label>
+					<textarea class="popup__input popup__input_question" rows="5" cols="50" type="text" id="question"
+						name="question"></textarea>
+				</div> -->
+					<!-- <a class="auth__fp" href="#">Forgot Password?</a> -->
+					<button class="popup__btn" type="submit">Забронировать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230328211632"></script>
+
+</body>
+
+</html>
