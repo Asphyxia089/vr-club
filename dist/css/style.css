@@ -2108,8 +2108,8 @@ h4 {
 .games__img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  min-height: 154.89px;
 }
 
 .games__description {
